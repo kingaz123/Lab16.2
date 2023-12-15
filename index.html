@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programmers Survey Form</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+  <div id="heading">
+    <h1 id="title">Tiếng Nói của Những Lập Trình Viên! <br> Hãy Chia Sẻ Lựa Chọn Của Bạn!</h1>
+    <p id="description">Chúng tôi muốn biết về các công nghệ và công cụ mà các kỹ sư phần mềm đang sử dụng trên khắp thế
+      giới! Ý kiến của mỗi lập trình viên đều rất quý giá với chúng tôi!</p>
+  </div>
+  <div id="main">
+    <form id="survey-form">
+      <div id="input-fields">
+        <label id="name-label"><b>Họ và tên:</b></label>
+        <input id="name" type="text" name="name" class="form" required placeholder="Họ tên đầy đủ"><br><br>
+
+        <label id="email-label"><b>Email:</b></label>
+        <input id="email" type="email" name="email" class="form" required placeholder="abc@gmail.com"><br><br>
+
+        <label id="number-label"><b>Tuổi:</b></label>
+        <input id="number" type="number" name="number" class="form" min="5" max="99" placeholder="25">
+      </div>
+
+      <div id="dropdown-div"><br>
+        <label id="dropdown-label"><strong>Ngôn ngữ lập trình mà bạn giỏi nhất:</strong></label><br>
+        <select id="dropdown" name="code-lang" class="form">
+          <option value="C">C</option>
+          <option value="Python">Python</option>
+          <option value="C#">C#</option>
+          <option value="php">PHP</option>
+          <option value="Js">Java Script</option>
+          <option value="Go">Go</option>
+          <option value="ruby">Ruby on Rails</option>
+          <option value="C++">C++</option>
+          <option value="Java">Java</option>
+        </select>
+      </div>
+
+      <div id="button-area"><br>
+        <label id="job-label"><b>Tình trạng công việc:</b></label><br>
+        <input type="radio" class="radio-inline" name="gender" value="employed" checked> Làm việc toàn thời gian<br>
+        <input type="radio" class="radio-inline" name="gender" value="freelancer"> Làm việc bán thời gian
+        (hoặc làm Freelancer)<br>
+        <input type="radio" class="radio-inline" name="gender" value="applier"> Đang tìm kiếm việc làm <br>
+        <input type="radio" class="radio-inline" name="gender" value="unemployed"> Là sinh viên(chưa đi
+        làm)
+      </div>
+
+      <div id="button-area"><br>
+        <label id="os-label"><b>Bạn quen làm việc trên hệ điều hành nào:</b></label><br>
+        <input type="checkbox" name="os1" value="windows" checked> Tôi có kinh nghiệm với hệ điều hành Windows<br>
+        <input type="checkbox" name="os2" value="linux"> Tôi có kinh nghiệm với hệ điều hành Linux<br>
+        <input type="checkbox" name="os3" value="mac"> Tôi có kinh nghiệm với hệ điều hành MacOS<br>
+      </div>
+
+      <div id="dropdown"><br><br>
+        <label id="dropdown-label"><strong>Ngôn ngữ lập trình bạn muốn thông thạo:</strong></label><br>
+        <select id="dropdown" name="code-lang" class="form"><br><br>
+          <option value="C">C</option>
+          <option value="Python">Python</option>
+          <option value="C#">C#</option>
+          <option value="php">PHP</option>
+          <option value="Js">Java Script</option>
+          <option value="Go">Go</option>
+          <option value="ruby">Ruby on Rails</option>
+          <option value="C++">C++</option>
+          <option value="Java">Java</option>
+        </select>
+      </div>
+
+      <div id="button-area"><br><br>
+        <label id="os-label"><b>Bạn có kinh nghiệm về công nghệ mới nào dưới đây:</b></label><br>
+        <input type="checkbox" name="tech1" value="flutter"> Giao diện Flutter UI<br>
+        <input type="checkbox" name="tech2" value="nodejs"> Node.js<br>
+        <input type="checkbox" name="tech3" value="tnflow"> Tensorflow<br>
+        <input type="checkbox" name="tech3" value="git"> Typescript<br>
+        <input type="checkbox" name="tech3" value="devops"> Không có<br>
+      </div>
+
+      <div id="ending"><br><br>
+        <label id="comments-label">Bạn có ý kiến gì về cuộc khảo sát này không?</label><br>
+        <textarea style="height:120px;" class="form" placeholder="Hãy viết đánh giá của bạn..."></textarea><br><br>
+        <button id="submit" type="submit" class="form">Gửi</button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
